@@ -1,0 +1,107 @@
+body {
+	.wrapper {
+		width: 50%;
+		height: 65px;
+		margin: auto;
+		background-color: #444;
+		padding-top: 40px;
+
+		.content {
+			position: relative;
+			background-color: #fff;
+			width: 300px;
+			height: 20px;
+			border-radius: 100px;
+			margin-left: 40px;
+			z-index: 0;
+
+			.content_circle {
+				background-color: #444;
+				width: 300px;
+				//width: calc(~'100% - 10px');
+				height: 20px;
+				position: relative;
+				border-radius: 100px;
+				display: flex;
+				transition: all 3s ease-in-out;
+				z-index: 2;
+
+				//1) animation-name - определяет список применяющих к элементу анимаций
+				//можно указывать элементы через запятую, но приоритет будет у последнего элем-та
+				//указываем название которым назвали наши ключевые кадры
+				//таким образом мы связываем селектор элемента круга с ключевыми кадрами 
+				//2) animation-duration - время за которое происходит анимация, указывается в секундах или в милисекундах
+				//3) animation-timing-function - задает сценарии развития анимации между ключевыми кадрами
+				//4) animation-iteration-count - отвечает за количество повторов ключевых кадров
+				//5) animation-direction - определяет тип проигрывания ключевых кадров
+				//6) animation-play-state - позволяет запускать либо приостанавливать анимацию по определенному событию
+				//7) animation-delay - указывает длительность значения перед началом анимации, имеет и отрицательное значение
+				// запускает анимацию с середины цикла
+				//8) 
+				animation-name: deep-blue-circle;
+				animation-duration: 3s;
+				animation-timing-function: linear;
+				// animation-iteration-count: 2;
+				// animation-direction: alternate;
+				// animation-play-state: running;
+				animation-delay: 1s;
+				animation-fill-mode: forwards;
+
+			}
+
+			&:hover .content_circle {
+				background-color: aqua;
+				transition: all 3s ease-in-out;
+				//animation-play-state: paused;
+				//animation-fill-mode: forwards;
+			}
+
+			.text {
+				position: absolute;
+				top: 0;
+				left: 20px;
+				color: #fff;
+				animation-name: text-change-color;
+				animation-duration: 4s;
+				animation-fill-mode: forwards;
+			}
+		}
+	}
+}
+
+// подключение анимации keyfarames
+//внутри фигурных скобок записываем ключевые кадры
+//у каждого кадра свои фигурные скобки, которые записывать лучше в процентах
+@keyframes deep-blue-circle {
+	0% {
+		left: 0;
+	}
+
+	50% {
+		background-color: rgb(174, 214, 43);
+		-webkit-box-shadow: 0px 0px 35px 4px rgb(169, 191, 95);
+		-moz-box-shadow: 0px 0px 35px 4px rgb(157, 180, 82);
+		box-shadow: 0px 0px 35px 4px rgb(174, 214, 43);
+	}
+
+	100% {
+		left: 300px;
+	}
+}
+
+@keyframes text-change-color {
+	0% {
+		color: #fff;
+	}
+
+	80% {
+		color: #fff;
+		-webkit-text-shadow: 0px 0px 35px 14px rgb(169, 191, 95);
+		-moz-text-shadow: 0px 0px 35px 14px rgb(157, 180, 82);
+		text-shadow: 0px 0px 35px 14px rgb(174, 214, 43);
+	}
+
+	100% {
+		color: rgb(174, 214, 43);
+	}
+}
