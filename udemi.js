@@ -19,17 +19,25 @@
 
 //Простое взаимодействие с пользователем
 //#########################################
-let result = confirm('Are you here? ');
-let answer = prompt('You like lesson js', 'yes');//ответ который сюда передал пользователь выводит строку
-let get = 'Hello world!';
-alert(get);
+// let result = confirm('Are you here? ');
+// let answer = prompt('You like lesson js', 'yes');//ответ который сюда передал пользователь выводит строку
+// let get = 'Hello world!';
+// alert(get);
 
-//записываем данные пользователя  вмассив
-let arr = [];
+// //записываем данные пользователя  вмассив
+// let arr = [];
 
-arr[0] = prompt('Как ваше имя', '');
-arr[1] = prompt('Как ваша фамилия', '');
-arr[2] = prompt('Сколько вам лет', '');
-console.log(arr);
-//promt, alert, confirm блокируют построение страницы до того как они будут выполнены
-console.log(typeof (null));// выведет object - официальная признанная ошибка!!!
+// arr[0] = prompt('Как ваше имя', '');
+// arr[1] = prompt('Как ваша фамилия', '');
+// arr[2] = prompt('Сколько вам лет', '');
+// console.log(arr);
+// //promt, alert, confirm блокируют построение страницы до того как они будут выполнены
+// console.log(typeof (null));// выведет object - официальная признанная ошибка!!!
+
+
+//Интерпаляция
+let name = 'Vit';
+console.log(`Will be strong ${name}`);
+
+let arrHobbys = ['sport', ' programming', ' swiming', ' musik'];
+console.log(`I like this hobbys ${arrHobbys} and i also study english.`);
