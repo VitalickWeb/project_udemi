@@ -59,3 +59,33 @@
 // } else {
 // 	console.log(!0);
 // }
+
+//Цыклы
+let i = 1;
+while (i < 8) {//условие выполняется пока меньше 8ми
+	console.log(i);
+	i++;
+}
+
+let num = 0;
+do {
+	console.log(num);
+	num++;
+}
+while (num < 8);//условие проверяется после отработки цикла
+
+let arr = [1, 2, 3, 4, 5, 6];
+for (let i = 0; i < arr.length; i++) {
+	if (arr[i] == 4) {
+		console.log(i);
+		break;//используем инструкцию break что бы не тратить ресурсы в пустую
+	}
+}
+
+let cont = 10;
+for (let i = 0; i < cont; i++) {
+	if (i === 5) {
+		console.log(i);
+		continue;//прекращает тот шаг который нам не нужен, но не прекращает полностью цикл
+	}
+}
