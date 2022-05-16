@@ -43,19 +43,19 @@
 // console.log(`I like this hobbys ${arrHobbys} and i also study english.`);
 
 //Логические операторы
-const hamburger = 3;
-const fries = 3;
-const cola = 0;
-const nugets = 2;
+// const hamburger = 3;
+// const fries = 3;
+// const cola = 0;
+// const nugets = 2;
 
-if (hamburger === 3 && cola === 2 || fries === 3 && nugets) {//приоритет здесь отдается оператору сравнение, после оператор и, и потом уже идет сравнение или
-	console.log('Все довольны');
-} else {
-	console.log('Мы уходим');
-}
+// if (hamburger === 3 && cola === 2 || fries === 3 && nugets) {//приоритет здесь отдается оператору сравнение, после оператор и, и потом уже идет сравнение или
+// 	console.log('Все довольны');
+// } else {
+// 	console.log('Мы уходим');
+// }
 
-if (hamburger === 3 && (cola === 2 || fries === 3) && nugets) {
-	console.log('!!!');//здесь приоритет вычислениябудет происходить изначально в скобках
-} else {
-	console.log(!0);
-}
+// if (hamburger === 3 && (cola === 2 || fries === 3) && nugets) {
+// 	console.log('!!!');//здесь приоритет вычислениябудет происходить изначально в скобках
+// } else {
+// 	console.log(!0);
+// }
