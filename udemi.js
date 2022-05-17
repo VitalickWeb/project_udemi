@@ -95,12 +95,12 @@
 
 //Вложенные циклы
 //###############################################################
-for (let i = 0; i < 3; i++) {
-	console.log(i);//0 перввоя прокрутка 1 вторая прокрутка 2 третья прокрутка
-	for (let j = 0; j < 3; j++) {
-		console.log(j);//0,1,2 перешел работать этот цикл 0,1,2 второй переход 0,1,2 третий переход и завершение работы циклов.
-	}
-}
+// for (let i = 0; i < 3; i++) {
+// 	console.log(i);//0 перввоя прокрутка 1 вторая прокрутка 2 третья прокрутка
+// 	for (let j = 0; j < 3; j++) {
+// 		console.log(j);//0,1,2 перешел работать этот цикл 0,1,2 второй переход 0,1,2 третий переход и завершение работы циклов.
+// 	}
+// }
 
 // *
 // **
@@ -118,13 +118,25 @@ for (let i = 0; i < 3; i++) {
 // 	console.log(str);
 // }
 
-//2 вариант
-const len = 7;
-let string = '';
-for (let i = 0; i < len; i++) {
-	for (let j = 0; j < i; j++) {
-		string += '*';
+//2 вариант пирамиды
+// const len = 7;
+// let string = '';
+// for (let i = 0; i < len; i++) {
+// 	for (let j = 0; j < i; j++) {
+// 		string += '*';
+// 	}
+// 	string += '\n';
+// }
+// console.log(string);
+
+//labels
+first: for (let i = 0; i < 3; i++) {
+	console.log(`first level ${i}`);
+	for (let j = 0; j < 3; j++) {
+		console.log(`second level ${j}`);
+		for (let k = 0; k < 4; k++) {
+			if (k === 2) continue first;
+			console.log(`third level ${k}`);
+		}
 	}
-	string += '\n';
 }
-console.log(string);
