@@ -29,13 +29,20 @@
 // }
 
 //continiue while
-let j = 2;
-while (j < 16) {
-	j++;
-	if (j % 2 === 0) {
-		continue;
-	} else {
-		console.log(j);
-	}
+// let j = 2;
+// while (j < 16) {
+// 	j++;
+// 	if (j % 2 === 0) {
+// 		continue;
+// 	} else {
+// 		console.log(j);
+// 	}
+// }
 
+//заполнить массив от 5 до 10
+const arrayOfNumbers = [];
+
+for (let i = 5; i <= 10; i++) {
+	arrayOfNumbers.push(i);
 }
+console.log(arrayOfNumbers);
