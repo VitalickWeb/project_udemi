@@ -108,13 +108,23 @@ for (let i = 0; i < 3; i++) {
 // ****
 // *****
 // ******
+//1 вариант
+// const length = 7;
+// for (let i = 0; i < length; i++) {
+// 	let str = '';
+// 	for (let j = 0; j < i; j++) {
+// 		str += '*';
+// 	}
+// 	console.log(str);
+// }
 
-const length = 7;
-for (let i = 0; i < length; i++) {
-	let str = '';
+//2 вариант
+const len = 7;
+let string = '';
+for (let i = 0; i < len; i++) {
 	for (let j = 0; j < i; j++) {
-		str += '*';
+		string += '*';
 	}
-	console.log(str);
+	string += '\n';
 }
-
+console.log(string);
