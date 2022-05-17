@@ -142,13 +142,16 @@
 // }
 
 //labels break
-first: for (let i = 0; i < 3; i++) {
-	console.log(`first level ${i}`);
-	for (let j = 0; j < 3; j++) {
-		console.log(`second level ${j}`);
-		for (let k = 0; k < 4; k++) {
-			if (k === 2) break first;//цикл с первого раза остановится здесь
-			console.log(`third level ${k}`);
-		}
-	}
-}
+// first: for (let i = 0; i < 3; i++) {
+// 	console.log(`first level ${i}`);
+// 	for (let j = 0; j < 3; j++) {
+// 		console.log(`second level ${j}`);
+// 		for (let k = 0; k < 4; k++) {
+// 			if (k === 2) break first;//цикл с первого раза остановится здесь
+// 			console.log(`third level ${k}`);
+// 		}
+// 	}
+// }
+
+
+//Упражнение по написанию кода 3: Задания на использование циклов и условий
