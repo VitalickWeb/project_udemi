@@ -19,11 +19,23 @@
 // 	console.log(i);
 // }
 
+//continiue for
+// for (let i = 2; i <= 16; i++) {
+// 	if (i % 2 === 0) {
+// 		continue;
+// 	} else {
+// 		console.log(i);
+// 	}
+// }
+
 //continiue while
-for (let i = 2; i <= 16; i++) {
-	if (i % 2 === 0) {
+let j = 2;
+while (j < 16) {
+	j++;
+	if (j % 2 === 0) {
 		continue;
 	} else {
-		console.log(i);
+		console.log(j);
 	}
+
 }
