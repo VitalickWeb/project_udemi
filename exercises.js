@@ -1,5 +1,6 @@
 'use strict';
 
+//execises cycles
 //вывести числа от 5 до 10
 // for (let i = 5; i <= 10; i++) {
 // 	console.log(i);
@@ -14,6 +15,15 @@
 // }
 
 //even nums
-for (let i = 2; i <= 10; i += 2) {
-	console.log(i);
+// for (let i = 2; i <= 10; i += 2) {
+// 	console.log(i);
+// }
+
+//continiue while
+for (let i = 2; i <= 16; i++) {
+	if (i % 2 === 0) {
+		continue;
+	} else {
+		console.log(i);
+	}
 }
