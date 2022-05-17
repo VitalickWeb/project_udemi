@@ -6,9 +6,14 @@
 // }
 
 //вывести числа в обатном порядке и остаовить если число равно 13
-for (let i = 20; i > 10; i--) {
-	if (i <= 13) {
-		console.log(i);
-		break;
-	}
+// for (let i = 20; i > 10; i--) {
+// 	console.log(i);
+// 	if (i < 14) {
+// 		break;
+// 	}
+// }
+
+//even nums
+for (let i = 2; i <= 10; i += 2) {
+	console.log(i);
 }
