@@ -40,9 +40,19 @@
 // }
 
 //заполнить массив от 5 до 10
-const arrayOfNumbers = [];
+// const arrayOfNumbers = [];
 
-for (let i = 5; i <= 10; i++) {
-	arrayOfNumbers.push(i);
+// for (let i = 5; i <= 10; i++) {
+// 	arrayOfNumbers.push(i);
+// }
+// console.log(arrayOfNumbers);
+
+
+//arrays
+const arr = [3, 5, 8, 16, 20, 23, 50];
+const result = [];
+
+for (let i = 0; i < arr.length; i++) {
+	result[i] = arr[i];
 }
-console.log(arrayOfNumbers);
+console.log(result);
