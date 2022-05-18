@@ -58,14 +58,24 @@
 // console.log(result);
 
 
+//обходим строки увеличивая числа в 2 раза
+// const data = [5, 10, 'Shopping', 20, 'Homework'];
+
+// for (let i = 0; i < data.length; i++) {
+// 	if (typeof data[i] === 'string') {
+// 		data[i] += ' - done';
+// 	} else {
+// 		data[i] = +data[i] * 2;
+// 	}
+// }
+// console.log(data);
+
+
 const data = [5, 10, 'Shopping', 20, 'Homework'];
+const result = [];
 
-for (let i = 0; i < data.length; i++) {
-
-	if (typeof data[i] === 'string') {
-		data[i] += ' - done';
-	} else {
-		data[i] = +data[i] * 2;
-	}
+for (let i = data.length - 1; i >= 0; i--) {
+	console.log(i, data[i]);
+	result.push(data[i]);
 }
-console.log(data);
+console.log(result);
