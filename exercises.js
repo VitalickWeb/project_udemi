@@ -72,16 +72,32 @@
 
 
 //revers array, two options
-const data = [5, 10, 'Shopping', 20, 'Homework'];
-const result = [];
+// const data = [5, 10, 'Shopping', 20, 'Homework'];
+// const result = [];
 
-for (let i = data.length - 1; i >= 0; i--) {
-	result.push(data[i]);
+// for (let i = data.length - 1; i >= 0; i--) {
+// 	result.push(data[i]);
+// }
+
+// for (let i = 1; i <= data.length; i++) {
+// 	result[i - 1] = data[data.length - i];
+// }
+// console.log(result);
+
+
+
+//figure building
+const lines = 5;
+let result = '';
+
+for (let i = 0; i <= lines; i++) {
+	for (let j = 0; j < lines - i; j++) {
+		result += " ";
+	}
+	for (let j = 0; j < 2 * i + 1; j++) {
+		result += "*";
+	}
+	result += "\n";
 }
 
-for (let i = 1; i <= data.length; i++) {
-	result[i - 1] = data[data.length - i];
-}
-console.log(result);
-
-
+console.log(result)
