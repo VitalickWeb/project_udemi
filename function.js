@@ -9,7 +9,17 @@
 
 
 //parameters function
-function firstParam(text, num) {
-	console.log(text, num);
+// function firstParam(text, num) {
+// 	console.log(text, num);
+// }
+// firstParam('hi i am Vit', 19);
+
+
+//function and variables
+let num = 20;
+
+function func(test) {
+	num = test;
 }
-firstParam('hi i am Vit', 19);
+console.log(func(30));// == undefined
+console.log(num);// == 30
