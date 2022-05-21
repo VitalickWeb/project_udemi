@@ -40,7 +40,11 @@ for (let i = 0; i < 2; i++) {
 	const LastFilm1 = prompt('Один из последних просмотренных фильмов', '');
 	const lastWotchOfFilms1 = prompt('На сколько оцените его?', '');
 
-	personalMoviesDB['movies'][LastFilm1] = lastWotchOfFilms1;
+	if (LastFilm1 != null && LastFilm1 != '' && lastWotchOfFilms1 != null && lastWotchOfFilms1 != '' && LastFilm1.length <= 12) {
+		personalMoviesDB['movies'][LastFilm1] = lastWotchOfFilms1;
+	} else {
+		i--;
+	}
 }
 
 console.log(personalMoviesDB);
